@@ -52,16 +52,18 @@
         }
         .skill-name {
             font-weight: bold;
+            margin-bottom: 5px;
         }
         .skill-bar {
             background-color: #ddd;
             height: 20px;
             border-radius: 10px;
+            overflow: hidden;
         }
         .skill-progress {
             background-color: #4caf50;
-            border-radius: 10px;
             height: 100%;
+            border-radius: 10px;
         }
         .project-item {
             margin-bottom: 20px;
@@ -106,8 +108,8 @@
         <div class="container">
             <h2>About Me</h2>
             <p>
-                Hi and Welcome. I am Ben Lloyd, an aspiring engineering in the field of Mechatronics,
-                showcasing my various peices of work and projects completed.
+                Hi and Welcome. I am Ben Lloyd, an aspiring engineer in the field of Mechatronics,
+                showcasing my various pieces of work and projects completed.
             </p>
         </div>
     </section>
@@ -116,12 +118,12 @@
             <h2>Education</h2>
             <h3>RMIT University</h3>
             <h4>Bachelor of Engineering (Advanced Manufacturing and Mechatronics) Hons/Bachelor of Business double degree</h4>
-            <h5>2019 - 2024</h5> 
+            <h5>2019 - 2024</h5>
             <p>Completing Double Degree in Engineering and Business at RMIT, Current WAM: 69</p>
             <br><br>
             <h3>Scotch College Melbourne</h3>
-            <h4>Yr 7 - 12</h4> 
-            <p>Completed VCE: 84.75 <br> School Prefect & Full Colours (Commitment to School) <br> </p>
+            <h4>Yr 7 - 12</h4>
+            <p>Completed VCE: 84.75 <br> School Prefect & Full Colours (Commitment to School) <br></p>
         </div>
     </section>
     <section id="skills">
@@ -129,18 +131,77 @@
             <h2>Skills</h2>
             <ul class="skills-list">
                 <li class="skill-item">
-                    <span class="skill-name">Programming Languages</span>
+                    <span class="skill-name">Programming (Python, JavaScript, C++)</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <span class="skill-name">Web Development (HTML, CSS, React)</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <span class="skill-name">Database Management (SQL, MongoDB)</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <span class="skill-name">Version Control (Git, GitHub)</span>
                     <div class="skill-bar">
                         <div class="skill-progress" style="width: 80%;"></div>
                     </div>
                 </li>
                 <li class="skill-item">
-                    <span class="skill-name">Software Tools</span>
+                    <span class="skill-name">Circuit Design</span>
                     <div class="skill-bar">
                         <div class="skill-progress" style="width: 70%;"></div>
                     </div>
                 </li>
-                <!-- Add more skills as needed -->
+                <li class="skill-item">
+                    <span class="skill-name">PCB Layout</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 65%;"></div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <span class="skill-name">Microcontroller Programming (Arduino, Raspberry Pi)</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <span class="skill-name">Signal Processing</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%;"></div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <span class="skill-name">3D CAD Modeling (SolidWorks, AutoCAD)</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <span class="skill-name">Finite Element Analysis (FEA)</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <span class="skill-name">Manufacturing Processes</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%;"></div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <span class="skill-name">Robotics</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </li>
             </ul>
         </div>
     </section>
@@ -148,25 +209,25 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="project-item">
-                <h3 class="project-title">Multi-object Tracker (Computer Vision/YOLOv8) </h3>
+                <h3 class="project-title">Multi-object Tracker (Computer Vision/YOLOv8)</h3>
                 <p class="project-description">
-                    Developed and implememented Multi-object Tracker using YOLOv8 & OpenCV. <br>
-                    Developed in Python on a custom dataset for specific purpose. 
+                    Developed and implemented Multi-object Tracker using YOLOv8 & OpenCV. <br>
+                    Developed in Python on a custom dataset for specific purpose.
                 </p>
                 <a href="#" class="project-link">View Project</a>
             </div>
             <div class="project-item">
                 <h3 class="project-title">Adhoc Sensor Set Development</h3>
                 <p class="project-description">
-                    Developing sensor set for datalogging and analysis purposes. 
-                    Designed to mimic sensor which are already existing on passenger vehicles.
+                    Developing sensor set for data logging and analysis purposes. 
+                    Designed to mimic sensors which are already existing on passenger vehicles.
                 </p>
                 <a href="#" class="project-link">View Project</a>
             </div>
             <div class="project-item">
-                <h3 class="project-title">Data Visualisation and Analysis Utilising Python</h3>
+                <h3 class="project-title">Data Visualisation and Analysis Utilizing Python</h3>
                 <p class="project-description">
-                    Utilising Matplotlib and OpenCV in order to conduct analysis of data captured across multiple devices.
+                    Utilizing Matplotlib and OpenCV in order to conduct analysis of data captured across multiple devices.
                     Integrating Video, Audio & Sensors in order to visually determine correlations between events.
                 </p>
                 <a href="#" class="project-link">View Project</a>
@@ -178,7 +239,7 @@
     <section id="experience">
         <div class="container">
             <h2>Experience</h2>
-            <h3>Robert Bosch Oceania </h3>
+            <h3>Robert Bosch Oceania</h3>
             <h4>Project Coordinator</h4>
             <h4>Cross Selling Coordinator</h4>
             <h4>Business Analyst</h4>
@@ -192,7 +253,7 @@
             <p>
                 Mobile: +61 416 754 416 <br>
                 Email: ben.j.lloyd@hotmail.com <br>
-                LinkedIn: https://www.linkedin.com/in/ben-lloyd-beng-bbus/ 
+                LinkedIn: <a href="https://www.linkedin.com/in/ben-lloyd-beng-bbus/" target="_blank">https://www.linkedin.com/in/ben-lloyd-beng-bbus/</a>
             </p>
             <br>
             <br>
