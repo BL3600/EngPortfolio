@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +12,20 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
+
         nav {
             display: flex;
             justify-content: center;
             margin-top: 20px;
         }
+
         nav a {
             color: #fff;
             text-decoration: none;
@@ -30,47 +34,78 @@
             border-radius: 5px;
             transition: background-color 0.3s;
         }
+
         nav a:hover {
             background-color: #555;
         }
+
         section {
             padding: 20px;
         }
+
         h2 {
             color: #333;
         }
+
+        h3 {
+            margin: 0;
+        }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
         }
+
         .skills-list {
             list-style-type: none;
             padding: 0;
         }
+
         .skill-item {
             margin-bottom: 10px;
         }
+
         .skill-name {
             margin-bottom: 5px;
-            list-style-type: circle;
         }
 
         .project-item {
             margin-bottom: 20px;
+            width: 750px;
         }
+
+        .project-title,
+        .project-description {
+            margin: 0;
+            padding: 0;
+        }
+
+        .project-date{
+            font-style: italic;
+            font-size: 13px;
+            color: rgba(54, 52, 52, 0.904);
+            margin: 0;
+            padding: 5px;
+
+        }
+
         .project-title {
             font-weight: bold;
         }
+
         .project-description {
             color: #666;
         }
+
         .project-link {
             color: #007bff;
             text-decoration: none;
         }
+
         .project-link:hover {
             text-decoration: underline;
         }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -82,6 +117,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Engineering Portfolio</h1>
@@ -94,15 +130,18 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
+
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
             <p>
-                Hi and Welcome. I am Ben Lloyd, an aspiring engineer in the field of Mechatronics,
-                showcasing my various pieces of work and projects completed.
+                Welcome! I’m Ben Lloyd, an aspiring mechatronics engineer passionate about software, electronics, and 3D design.
+                Here, I showcase a selection of my projects and completed work, reflecting my skills and interests in these disciplines.
+                Explore my portfolio to see how I bring innovative solutions to life through the integration of mechanical, electronic, and software systems.
             </p>
         </div>
     </section>
+
     <section id="education">
         <div class="container">
             <h2>Education</h2>
@@ -120,59 +159,62 @@
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
+
             <div class="project-item">
                 <h3 class="project-title">Multi-object Tracker (Computer Vision/YOLOv8)</h3>
+                <h4 class="project-date">&emsp;2024</h4>
                 <p class="project-description">
                     Developed and implemented Multi-object Tracker using YOLOv8 & OpenCV. <br>
                     Developed in Python on a custom dataset for specific purpose.
                 </p>
-                <a href="#" class="project-link">View Project</a>
             </div>
+
             <div class="project-item">
                 <h3 class="project-title">Adhoc Sensor Set Development</h3>
+                <h4 class="project-date">&emsp;2024</h4>
                 <p class="project-description">
-                    Developing sensor set for data logging and analysis purposes. 
+                    Developing sensor set for data logging and analysis purposes.
                     Designed to mimic sensors which are already existing on passenger vehicles.
                     Sensors Attached: MPUs, GPS, Microphone, Bluetooth Camera, Microphone
                     Data Storage: MicroSD Card (Data log file stored as .CSV)
                 </p>
-                <a href="#" class="project-link">View Project</a>
             </div>
+
             <div class="project-item">
                 <h3 class="project-title">Data Visualisation and Analysis Utilizing Python</h3>
+                <h4 class="project-date">&emsp;2024</h4>
                 <p class="project-description">
                     Utilizing Matplotlib and OpenCV in order to conduct analysis of data captured across multiple devices.
                     Integrating Video, Audio & Sensors in order to visually determine correlations between events.
                 </p>
-                <a href="#" class="project-link">View Project</a>
             </div>
-            
+
             <div class="project-item">
                 <h3 class="project-title">Automated Purchasing Bot (Python & Selenium)</h3>
+                <h4 class="project-date">&emsp;Mid 2023 - 2024</h4>
                 <p class="project-description">
                     Designed to purchase specific items from multiple websites automatically.
                     Analyses items about to purchase and determines whether it is at the right price to purchase.
                     Utilises Selenium for Web Interactions, SQL for data storage or all data scraped, Nordvpn for IP Switching and Batch control for scheduled monitoring.
                     Integrating Image classification (ML) in order to better determine item condition.
                 </p>
-                <a href="#" class="project-link">View Project</a>
             </div>
 
             <div class="project-item">
-                <h3 class="project-title"> Inventory Management GUI (Python & tkinter)</h3>
+                <h3 class="project-title">Inventory Management GUI (Python & tkinter)</h3>
+                <h4 class="project-date">&emsp;2024</h4>
                 <p class="project-description">
                     Designed to easily add and modify inventory stored in SQL DB.
                     Integration with SQL DB, executing Stored Procedures for relevant operations.
-                    live currency conversion for international purchases (API call)
-                    Leveraging data already scraped from Purchasing Bot to full in all relevant fields.
-
+                    Live currency conversion for international purchases (API call).
+                    Leveraging data already scraped from Purchasing Bot to fill in all relevant fields.
                 </p>
-                <a href="#" class="project-link">View Project</a>
             </div>
 
             <!-- Add more projects as needed -->
         </div>
     </section>
+
     <section id="experience">
         <div class="container">
             <h2>Experience</h2>
@@ -187,7 +229,7 @@
             <br>
         </div>
     </section>
-    
+
     <section id="skills">
         <div class="container">
             <h2>Skills</h2>
@@ -196,37 +238,31 @@
                 <li class="skill-item">
                     <span class="skill-name">&emsp;&bull;&emsp;Programming (Python, C++, Matlab)</span>
                 </li>
-                
                 <li class="skill-item">
                     <span class="skill-name">&emsp;&bull;&emsp;AI/Machine Learning (YOLOv8, OpenCV, Keras & Tensorflow)</span>
                 </li>
-
                 <li class="skill-item">
                     <span class="skill-name">&emsp;&bull;&emsp;Data Visualisation/analysis (Numpy, Matplotlib & Seaborn)</span>
                 </li>
-
                 <li class="skill-item">
                     <span class="skill-name">&emsp;&bull;&emsp;Database Management (SQL & Postgres)</span>
                 </li>
-
                 <li class="skill-item">
                     <span class="skill-name">&emsp;&bull;&emsp;Version Control & Automation (Git, GitHub & Batch)</span>
                 </li>
 
                 <h3>Electrical</h3>
-                
                 <li class="skill-item">
                     <span class="skill-name">&emsp;&bull;&emsp;Circuit Design & PCB Layout (Eagle, FlatCAM, etc)</span>
                 </li>
                 <li class="skill-item">
-                    <span class="skill-name">&emsp;&bull;&emsp;Microcontroller Programming (Arduino, Raspberry Pi, Nvidia Jetson)</span>    
+                    <span class="skill-name">&emsp;&bull;&emsp;Microcontroller Programming (Arduino, Raspberry Pi, Nvidia Jetson)</span>
                 </li>
                 <li class="skill-item">
                     <span class="skill-name">&emsp;&bull;&emsp;Signal Processing</span>
                 </li>
 
                 <h3>Mechanical</h3>
-
                 <li class="skill-item">
                     <span class="skill-name">&emsp;&bull;&emsp;3D CAD Modeling (SolidWorks, AutoCAD)</span>
                 </li>
@@ -242,7 +278,7 @@
             </ul>
         </div>
     </section>
-    
+
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
@@ -251,14 +287,13 @@
                 Email: ben.j.lloyd@hotmail.com <br>
                 LinkedIn: <a href="https://www.linkedin.com/in/ben-lloyd-beng-bbus/" target="_blank">https://www.linkedin.com/in/ben-lloyd-beng-bbus/</a>
             </p>
-            <br>
-            <br>
-            <br>
-            <br>
+            <br><br><br><br>
         </div>
     </section>
+
     <footer>
         <p>&copy; 2024 Engineering Portfolio</p>
     </footer>
 </body>
+
 </html>
