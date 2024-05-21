@@ -22,6 +22,7 @@
 
         nav {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             margin-top: 20px;
         }
@@ -29,7 +30,7 @@
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 5px;
             padding: 10px;
             border-radius: 5px;
             transition: background-color 0.3s;
@@ -50,6 +51,7 @@
         h3 {
             margin: 0;
         }
+
         p {
             margin: auto;
         }
@@ -57,6 +59,7 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
+            padding: 0 20px;
         }
 
         .skills-list {
@@ -74,7 +77,6 @@
 
         .project-item {
             margin-bottom: 20px;
-            width: 750px;
         }
 
         .project-title,
@@ -83,13 +85,12 @@
             padding: 0;
         }
 
-        .project-date{
+        .project-date {
             font-style: italic;
             font-size: 13px;
             color: rgba(54, 52, 52, 0.904);
             margin: 0;
             padding: 5px;
-
         }
 
         .project-title {
@@ -110,9 +111,37 @@
             color: #fff;
             padding: 20px;
             text-align: center;
-            position: fixed;
-            bottom: 0;
+            position: relative;
             width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .project-item {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            header, footer {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
+
+            section {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -244,8 +273,6 @@
                 &emsp;&emsp;-&emsp;CAD design and construction of multiple small car parts<br>
                 &emsp;&emsp;-&emsp;Attained knowledge in guidelines surrounding FSAE<br>
             </p>
-            
-
             <br>
         </div>
     </section>
